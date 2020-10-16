@@ -1,14 +1,14 @@
-pragma solidity ^0.6.7;
+pragma solidity ^0.5.0;
 
 import "ds-test/test.sol";
 
-import "./Wynft.sol";
+import "./wyInsure.sol";
 
-contract WynftTest is DSTest {
-    Wynft wynft;
+contract wyInsureTest is DSTest {
+    wyInsure wyi;
 
     function setUp() public {
-        wynft = new Wynft();
+        wyi = new wyInsure();
     }
 
     function testFail_basic_sanity() public {
